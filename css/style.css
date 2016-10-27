@@ -1,5 +1,7 @@
 body {
-
+  font-size: 18px;
+  line-height: 1.2;
+  font-family: "Roboto", "Arial", sans-serif;
 }
 
 h2 {
@@ -7,5 +9,5 @@ h2 {
 }
 
 h3 {
-  
+
 }
