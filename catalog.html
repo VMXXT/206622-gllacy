@@ -64,28 +64,28 @@
                   <input class="field" type="password" name="password">
                   <label class="placeholder" data-placeholder="Пароль"></label>
                   <button class="btn" type="submit">Войти</button>
-                  <a href="#" class="forget"><span>Забыли пароль?</span></a>
-                  <a href="#" class="registration"><span>Новая регистрация</span></a>
+                  <a href="#" class="forget">Забыли пароль?</a>
+                  <a href="#" class="registration">Новая регистрация</a>
                 </form>
               </div>
             </div>
             <div class="cart-main">
               <table class="cart-table">
                 <tr class="row-1">
-                  <td class="column-1"></td>
-                  <td class="column-2"></td>
-                  <td class="column-3">Пломбир с апельсиновым джемом</td>
-                  <td class="column-4">1,5 кг</td>
-                  <td class="column-5">х 200 руб.</td>
-                  <td class="column-6">300 руб.</td>
+                  <td class="product-remove"></td>
+                  <td class="product-img"></td>
+                  <td class="product-name">Пломбир с апельсиновым джемом</td>
+                  <td class="product-mass">1,5 кг</td>
+                  <td class="price-per">х 200 руб.</td>
+                  <td class="price-total">300 руб.</td>
                 </tr>
                 <tr class="row-2">
-                  <td class="column-1"></td>
-                  <td class="column-2"></td>
-                  <td class="column-3">Клубничный пломбир с присыпкой из белого шоколада</td>
-                  <td class="column-4">1,5 кг</td>
-                  <td class="column-5">х 300 руб.</td>
-                  <td class="column-6">450 руб.</td>
+                  <td class="product-remove"></td>
+                  <td class="product-img"></td>
+                  <td class="product-name">Клубничный пломбир с присыпкой из белого шоколада</td>
+                  <td class="product-mass">1,5 кг</td>
+                  <td class="price-per">х 300 руб.</td>
+                  <td class="price-total">450 руб.</td>
                 </tr>
                 <tr class="row-3">
                   <td class="total" colspan="6">Итого: 750 руб.</td>
@@ -113,12 +113,11 @@
           </li>
         </ul>
       </div>
-      <h1 class="catalog h1">Сливочное мороженое</h1>
-      <div class="filter-form">
-        <form action="#" method="post">
+      <h1 class="catalog-main-title">Сливочное мороженое</h1>
+        <form class="filter-form" action="#" method="post">
           <div class="filter sorting">
             <span class="filter-title">Сортировка:</span>
-            <div class="select-container">
+            <div class="select-wrapper">
               <select name="sorting">
                 <option value="popularity" selected>по популярности</option>
                 <option value="low-cost">сначала недорогие</option>
@@ -136,8 +135,14 @@
               <label class="max-price">
               <input name="max-price" type="text" value="500">руб.</label>
             </div>
-            <div class="">
-              <!-- тут не знаю как ползунок написать-->
+            <div class="filter-item filter-price-range">
+              <span class="filter-title">Цена: 100 руб. – 500 руб.</span>
+              <div class="filter-pict">
+                <div class="filter-scale"></div>
+                <div class="filter-diapason"></div>
+                <div class="filter-min"></div>
+                <div class="filter-max"></div>
+              </div>
             </div>
           </div>
           <div class="filter fatness">
@@ -164,31 +169,20 @@
           <div class="filter filler">
             <span class="filter-title">Наполнители:</span>
             <div class="filter-content">
-              <div class="filter-item-wrapper">
-                <input id="chocolate" type="checkbox" name="filler-chocolate" value="chocolate" checked>
-                <label for="chocolate">шоколадные</label>
-              </div>
-              <div class="filter-item-wrapper">
-                <input id="sugar" type="checkbox" name="filler-sugar" value="sugar" checked>
-                <label for="sugar">сахарные присыпки</label>
-              </div>
-              <div class="filter-item-wrapper">
-                <input id="fruits" type="checkbox" name="filler-fruits" value="fruits">
-                <label for="fruits">фрукты</label>
-              </div>
-              <div class="filter-item-wrapper">
-                <input id="syrups" type="checkbox" name="filler-syrups" value="syrups">
-                <label for="syrups">сиропы</label>
-              </div>
-              <div class="filter-item-wrapper">
-                <input id="jams" type="checkbox" name="filler-jams" value="jams">
-                <label for="jams">джемы</label>
-              </div>
+              <input id="chocolate" type="checkbox" name="filler-chocolate" value="chocolate" checked>
+              <label for="chocolate">шоколадные</label>
+              <input id="sugar" type="checkbox" name="filler-sugar" value="sugar" checked>
+              <label for="sugar">сахарные присыпки</label>
+              <input id="fruits" type="checkbox" name="filler-fruits" value="fruits">
+              <label for="fruits">фрукты</label>
+              <input id="syrups" type="checkbox" name="filler-syrups" value="syrups">
+              <label for="syrups">сиропы</label>
+              <input id="jams" type="checkbox" name="filler-jams" value="jams">
+              <label for="jams">джемы</label>
             </div>
           </div>
           <button class="filter-btn" type="submit">Применить</button>
         </form>
-      </div>
       <div class="products">
         <!-- 1-й ряд -->
         <div class="product-inner">
