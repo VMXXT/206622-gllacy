@@ -1,11 +1,13 @@
 body {
+  min-width: 1200px;
   font-size: 18px;
   line-height: 1.2;
   font-family: "Roboto", "Arial", sans-serif;
-}
+  }
+
 
 h1 {
-  font-size: 35px;
+  font-size: 60px;
   line-height: 30px;
 }
 
@@ -13,3 +15,186 @@ h2 {
   font-size: 24px;
   line-height: 30px;
 }
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.none {
+    display: none;
+}
+
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.container {
+	width: 1146px;
+  	margin: 0 auto;
+	padding: 0 27px;
+	
+	}
+	
+/* Шапка */
+.main-header-index  {
+	margin-bottom: 284px;
+	}
+	
+.main-header-catalog  {
+	margin-bottom: 284px;
+	}
+
+.logo-img {
+	float: left;
+	margin-left: -6px;
+	width: 155px;
+	
+	}
+	
+.main-navigation {
+	float: left;
+	width: 380px;
+	}
+	
+.user-block {
+	float:right;
+	width: 267px;
+	
+	}
+	
+.breadcrumbs {
+	float: left;
+	width: 560px;
+	}
+
+.brief-info {
+	float: right;
+	width: 267px;
+	}
+
+/* Слайдер */
+
+.main-slider {
+	margin-bottom: 40px;
+	}
+	
+
+.slider {
+	float:left;
+	min-height: 210px;
+	width: 1146px;
+	
+	}
+	
+/* Баннеры */
+
+.banners {
+	margin-bottom: 40px;
+	}
+	
+.banner-index {
+	width: 560px;
+	min-height: 230px;
+	
+	}
+	
+.banner-index:first-child {
+	float: left;
+	}
+	
+	
+.banner-index:last-child {
+	float: right;
+	}
+	
+	/* товары */
+	
+.products {
+	margin-bottom: 40px;
+	font-size: 0;
+	box-sizing: border-box;
+	}
+	
+.product-inner {
+	display: inline-block;
+	width: 267px;
+	margin-right: 20px;
+	vertical-align: top;
+	font-size: 16px;
+	outline: 3px solid blue; 
+	
+	}
+	
+.product-inner:last-clild{
+	margin-right: 0;
+	}
+	
+	/* инфоблок */
+	
+.info-row {
+	margin-bottom: 40px;
+	
+	}
+	
+.info-text-wrapper {
+	display: inline-block;
+	width: 539px;
+	margin-right: 26px;
+	
+	}
+	
+	
+	/* инфоблок */
+	
+.news-block-wrapper {
+	margin-bottom: 40px;
+	}
+	
+.news-block-item {
+	float: left;
+	width: 560px;
+	}
+	
+.news-block-item:last-child {
+	float: right;
+	}
+	
+	/* карта */
+	
+.map {
+	margin-bottom: 20px;
+	}
+	
+.map-contact {
+	float:right;
+	width: 302px;
+	margin-top: 62px;
+	margin-right: 27px;
+	}
+	/* подвал */
+	
+.footer {
+	
+	}
+	
+.footer-social {
+	float:left;
+	width: 267px;
+	min-height: 70px;
+	margin-right: 26px;
+	}
+	
+.footer-nav {
+	float:left;
+	width: 560px;
+	}
+	
+.copyright {
+	float: right;
+	width: 267px;
+	}
+	
+	
