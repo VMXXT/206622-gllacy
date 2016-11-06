@@ -6,7 +6,7 @@
     <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
-      <div class="container ">
+      <div class="container clearfix">
       <header class="main-header-catalog clearfix">
         <a href="index.html">
           <img class="logo-img" src="img/logo.svg" alt="ГлейсиШоп" width="155" height="65">
@@ -94,7 +94,7 @@
               <a class="btn none" href="#">Оформить заказ</a>
             </div>
             <div class="brief-info">
-              <span>с 10 до 20, ежедневно</span>
+              <span>с 10 до 20, ежедневно</span><br>  <!-- Без бр не получается -->
               <b>8 812 450-25-25</b>
             </div>
           </div>
@@ -181,7 +181,7 @@
               <label for="jams">джемы</label>
             </div>
           </div>
-          <button class="filter-btn" type="submit">Применить</button>
+          <button class="filter btn" type="submit">Применить</button>
         </form>
       <div class="products">
         <!-- 1-й ряд -->
@@ -333,26 +333,26 @@
         </div>
       </div>
       <div class="pagination">
-        <a class="active back" href="#"></a>
+        <a class="active back" href="#">&lt;</a>
         <a class="active" href="#">1</a>
         <a class="active" href="#">2</a>
         <a class="active" href="#">3</a>
         <a class="active" href="#">4</a>
         <a class="active" href="#">5</a>
-        <a class="active next" href="#"></a>
+        <a class="active next" href="#">&gt;</a>
       </div>
      </main>
-    <footer class="footer">
+    <footer class="footer clearfix">
       <div class="footer-social">
         <a href="https://twitter.com" class="social-btn social-tw"></a>
         <a href="https://www.instagram.com" class="social-btn social-insta"></a>
         <a href="https://www.facebook.com" class="social-btn social-fb"></a>
         <a href="https://vk.com" class="social-btn social-vk"></a>
       </div>
-      <div class="footer-nav">
+      <div class="footer-nav clearfix">
         <ul class="footer-menu">
           <li class="footer-menu-item">
-            <a href="#"><img src="img/ico-heart.png" alt="Heart" width="15" height="13">Для поставщиков</a>
+            <a href="#">Для поставщиков</a>
           </li>
           <li class="footer-menu-item">
             <a href="#">Наши документы</a>
