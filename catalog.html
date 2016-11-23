@@ -11,17 +11,16 @@
         <a href="index.html">
           <img class="logo-img" src="img/logo.svg" alt="ГлейсиШоп" width="155" height="65">
         </a>
-        <nav class="main-navigation">
+         <nav class="main-navigation">
           <ul>
             <li>
-              <a href="#" class="main-navigation-link active">Каталог</a>
-              <div class="sub-menu none">
-                <ul>
-                  <li>
+              <a href="#" class="main-navigation-link">Каталог</a>
+                <ul class="sub-menu">
+                  <li class="new">
                     <a href="#" class="sub-link">Новинки</a>
                   </li>
                   <li>
-                    <a href="gllacy-catalog.html" class="sub-link active">Сливочное</a>
+                    <a href="catalog.html" class="sub-link">Сливочное</a>
                   </li>
                   <li>
                     <a href="#" class="sub-link">Щербеты</a>
@@ -33,7 +32,6 @@
                     <a href="#" class="sub-link">Мелорин</a>
                   </li>
                 </ul>
-            </div>
             </li>
             <li>
               <a href="#" class="main-navigation-link">Доставка и оплата</a>
@@ -46,7 +44,7 @@
         <div class="user-block">
           <div class="search-main">
             <div class="search-title">Поиск</div>
-              <div class="search-block none">
+              <div class="search-block">
                 <form action="#" method="post">
                   <div class="search-input">
                     <input class="field field-search" type="text" name="search-request" >
@@ -57,7 +55,7 @@
             </div>
             <div class="logon-main">
               <div class="logon-title">Вход</div>
-              <div class="logon-block none">
+              <div class="logon-block">
                 <form action="#" method="post">
                   <input class="field" type="text" name="e-mail">
                   <label class="placeholder" data-placeholder="Электронная почта"></label>
@@ -69,36 +67,50 @@
                 </form>
               </div>
             </div>
-            <div class="cart-main">
-              <table class="cart-table none">
+            <div class="cart-main cart-filled">
+            	2 товара
+              <div class="cart-table">
+              <table>
                 <tr class="row-1">
-                  <td class="product-remove"></td>
-                  <td class="product-img"></td>
+                  <td>
+                  	<button class="product-remove" type="button"></button>
+                  </td>
+                  <td class="product-img">
+                  	<img src="img/icecream-orange.png" alt="Мороженка" width="33" height="33">
+                  </td>
                   <td class="product-name">Пломбир с апельсиновым джемом</td>
-                  <td class="product-mass">1,5 кг</td>
-                  <td class="price-per">х 200 руб.</td>
+                  <td class="product-mass">1,5 кг х</td>
+                  <td class="price-per">200 руб.</td>
                   <td class="price-total">300 руб.</td>
                 </tr>
                 <tr class="row-2">
-                  <td class="product-remove"></td>
-                  <td class="product-img"></td>
+                  <td>
+                  	<button class="product-remove" type="button"></button>
+                  </td>
+                  <td class="product-img">
+                  	<img src="img/icecream-strawberry.png" alt="Мороженка" width="33" height="33">
+                  </td>
                   <td class="product-name">Клубничный пломбир с присыпкой из белого шоколада</td>
-                  <td class="product-mass">1,5 кг</td>
-                  <td class="price-per">х 300 руб.</td>
+                  <td class="product-mass">1,5 кг х</td>
+                  <td class="price-per">300 руб.</td>
                   <td class="price-total">450 руб.</td>
                 </tr>
                 <tr class="row-3">
                   <td class="total" colspan="6">Итого: 750 руб.</td>
                 </tr>
               </table>
-              <a class="btn none" href="#">Оформить заказ</a>
+              <a class="btn" href="#">Оформить заказ</a>
+            </div>
             </div>
             <div class="brief-info">
-              <span>с 10 до 20, ежедневно</span><br>  <!-- Без бр не получается -->
+              <span>с 10 до 20, ежедневно</span><br>  
               <b>8 812 450-25-25</b>
             </div>
           </div>
-      <div class="breadcrumbs">
+      
+       </header>
+    <main>
+    <div class="breadcrumbs clearfix">
         <ul>
           <li>
             <a href="index.html">Главная</a>
@@ -111,8 +123,6 @@
           </li>
         </ul>
       </div>
-       </header>
-    <main>
       <h1 class="catalog-main-title">Сливочное мороженое</h1>
         <form class="filter-form" action="#" method="post">
           <div class="filter sorting">
@@ -342,35 +352,40 @@
         <a class="active next" href="#">&gt;</a>
       </div>
      </main>
-    <footer class="footer clearfix">
-      <div class="footer-social">
-        <a href="https://twitter.com" class="social-btn social-tw"></a>
-        <a href="https://www.instagram.com" class="social-btn social-insta"></a>
-        <a href="https://www.facebook.com" class="social-btn social-fb"></a>
-        <a href="https://vk.com" class="social-btn social-vk"></a>
-      </div>
-      <div class="footer-nav clearfix">
-        <ul class="footer-menu">
-          <li class="footer-menu-item">
-            <a href="#">Для поставщиков</a>
-          </li>
-          <li class="footer-menu-item">
-            <a href="#">Наши документы</a>
-          </li>
-        </ul>
-        <ul class="footer-menu">
-          <li class="footer-menu-item">
-            <a href="#">О производстве </a>
-          </li>
-          <li class="footer-menu-item">
-            <a href="#">Экологические стандарты</a>
-          </li>
-        </ul>
-      </div>
-      <div class="copyright">
-        Сделано в <a href="https://htmlacademy.ru">HTML Academy</a> 2016
-      </div>
-    </footer>
+			<footer class="footer clearfix">
+           <div class="footer-social">
+             <a href="https://twitter.com" class="social-btn social-tw"></a>
+             <a href="https://www.instagram.com" class="social-btn social-insta"></a>
+             <a href="https://www.facebook.com" class="social-btn social-fb"></a>
+             <a href="https://vk.com" class="social-btn social-vk"></a>
+           </div>
+           <div class="footer-nav">
+             <ul class="footer-menu">
+               <li class="footer-menu-item">
+                 <a href="#" class="heart">Для поставщиков</a>
+               </li
+               ><li class="footer-menu-item">
+                 <a href="#">Наши документы</a>
+               </li>
+             </ul>
+             <ul class="footer-menu">
+             		<li class="footer-menu-item">
+                 <a href="#">О производстве</a>
+               </li>
+               
+               <li class="footer-menu-item">
+                 <a href="#">Экологические стандарты</a>
+               </li>
+             </ul>
+           </div>
+           <div class="copyright">
+             <a href="https://htmlacademy.ru/">
+             		<img src="img/copyright-logo.png" width="108" height="38" alt="HTML Academy">
+             </a>
+             <p>Сделано в <a href="https://htmlacademy.ru">HTML Academy</a> © 2016</p>
+           </div>
+         </footer>
+       
 </div>
 </body>
 </html>
